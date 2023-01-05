@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+dogdb:
+  image: postgres
+  environment:
+    POSTGRES_USER: nikolas
+    POSTGRES_DB: dogdb
+    POSTGRES_PASSWORD: password
+
+
+    ports:
+      - 5432:5432
